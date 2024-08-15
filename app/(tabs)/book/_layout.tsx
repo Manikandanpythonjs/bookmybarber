@@ -1,0 +1,20 @@
+import { View, Text } from 'react-native'
+import React from 'react'
+import { Stack } from 'expo-router'
+
+export default function Layout() {
+    return (
+
+        <Stack screenOptions={{
+            headerShown: false,
+            animation: "slide_from_right",
+            statusBarAnimation: "slide"
+
+        }}>
+            <Stack.Screen name='index' />
+            <Stack.Screen name='orders' />
+
+        </Stack>
+
+    )
+}
